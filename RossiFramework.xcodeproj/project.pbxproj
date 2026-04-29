@@ -33,6 +33,7 @@
 			isa = PBXGroup;
 			children = (
 				28BB00BA2FA1D2EE00B6089F /* RossiFramework */,
+				28BB00DC2FA1E57E00B6089F /* Frameworks */,
 				28BB00B92FA1D2EE00B6089F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +44,13 @@
 				28BB00B82FA1D2EE00B6089F /* RossiFramework.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		28BB00DC2FA1E57E00B6089F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -1,0 +1,97 @@
+# Xcode
+#
+# gitignore contributors: scroll down to GitHub and Loader categories, add components as required.
+
+## Build results
+build/
+DerivedData/
+
+## Xcode project-specific
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+## Xcode 6.3 and later
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+
+## Xcode 10 and later
+*.xcscmblueprint
+
+## Xcode 13 and later
+.swiftpm/xcode
+
+## Git/Xcode integration
+*.xcworkspace/xcshareddata/SwiftPM/Package.resolved
+
+## Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift packages.
+# .build/
+
+## CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# if you'd like to do so, uncomment the line below.
+# Pods/
+
+## Carthage
+#
+# Add this line if you want to avoid checking in framework binary files from Carthage.
+# Carthage/Build/
+
+## AccuRev
+.accurev/
+
+## Fastlane
+#
+# It is recommended to not store the packages in the fastlane folder.
+# More information: https://docs.fastlane.tools/best-practices/source-control/#not-storing-packages
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+## Code Signing
+*.cert
+*.mobileprovision
+*.provisionprofile
+
+## Localization
+*.exportedQueries
+
+# macOS
+#
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
