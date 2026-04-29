@@ -6,14 +6,49 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		28BB00EE2FA1E95000B6089F /* RossiFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BB00B82FA1D2EE00B6089F /* RossiFramework.framework */; };
+		28BB00EF2FA1E95000B6089F /* RossiFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28BB00B82FA1D2EE00B6089F /* RossiFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28BB00F02FA1E95000B6089F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28BB00AF2FA1D2EE00B6089F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28BB00B72FA1D2EE00B6089F;
+			remoteInfo = RossiFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		28BB00F22FA1E95000B6089F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				28BB00EF2FA1E95000B6089F /* RossiFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		28BB00B82FA1D2EE00B6089F /* RossiFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RossiFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28BB00E72FA1E94C00B6089F /* GilbertaFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GilbertaFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		28BB00BA2FA1D2EE00B6089F /* RossiFramework */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = RossiFramework;
+			sourceTree = "<group>";
+		};
+		28BB00E82FA1E94C00B6089F /* GilbertaFramework */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = GilbertaFramework;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,6 +61,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		28BB00E42FA1E94C00B6089F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28BB00EE2FA1E95000B6089F /* RossiFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -33,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				28BB00BA2FA1D2EE00B6089F /* RossiFramework */,
+				28BB00E82FA1E94C00B6089F /* GilbertaFramework */,
 				28BB00DC2FA1E57E00B6089F /* Frameworks */,
 				28BB00B92FA1D2EE00B6089F /* Products */,
 			);
@@ -42,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				28BB00B82FA1D2EE00B6089F /* RossiFramework.framework */,
+				28BB00E72FA1E94C00B6089F /* GilbertaFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +102,13 @@
 
 /* Begin PBXHeadersBuildPhase section */
 		28BB00B32FA1D2EE00B6089F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28BB00E22FA1E94C00B6089F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -89,6 +141,31 @@
 			productReference = 28BB00B82FA1D2EE00B6089F /* RossiFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		28BB00E62FA1E94C00B6089F /* GilbertaFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28BB00EB2FA1E94C00B6089F /* Build configuration list for PBXNativeTarget "GilbertaFramework" */;
+			buildPhases = (
+				28BB00E22FA1E94C00B6089F /* Headers */,
+				28BB00E32FA1E94C00B6089F /* Sources */,
+				28BB00E42FA1E94C00B6089F /* Frameworks */,
+				28BB00E52FA1E94C00B6089F /* Resources */,
+				28BB00F22FA1E95000B6089F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28BB00F12FA1E95000B6089F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				28BB00E82FA1E94C00B6089F /* GilbertaFramework */,
+			);
+			name = GilbertaFramework;
+			packageProductDependencies = (
+			);
+			productName = GilbertaFramework;
+			productReference = 28BB00E72FA1E94C00B6089F /* GilbertaFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -100,6 +177,9 @@
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					28BB00B72FA1D2EE00B6089F = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					28BB00E62FA1E94C00B6089F = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
@@ -119,12 +199,20 @@
 			projectRoot = "";
 			targets = (
 				28BB00B72FA1D2EE00B6089F /* RossiFramework */,
+				28BB00E62FA1E94C00B6089F /* GilbertaFramework */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		28BB00B62FA1D2EE00B6089F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28BB00E52FA1E94C00B6089F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -141,7 +229,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		28BB00E32FA1E94C00B6089F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28BB00F12FA1E95000B6089F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28BB00B72FA1D2EE00B6089F /* RossiFramework */;
+			targetProxy = 28BB00F02FA1E95000B6089F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		28BB00BD2FA1D2EE00B6089F /* Debug */ = {
@@ -342,6 +445,78 @@
 			};
 			name = Release;
 		};
+		28BB00EC2FA1E94C00B6089F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RTQLFG8R8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.foxsteven.GilbertaFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		28BB00ED2FA1E94C00B6089F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RTQLFG8R8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.foxsteven.GilbertaFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -359,6 +534,15 @@
 			buildConfigurations = (
 				28BB00C02FA1D2EE00B6089F /* Debug */,
 				28BB00C12FA1D2EE00B6089F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28BB00EB2FA1E94C00B6089F /* Build configuration list for PBXNativeTarget "GilbertaFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28BB00EC2FA1E94C00B6089F /* Debug */,
+				28BB00ED2FA1E94C00B6089F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
