@@ -42,3 +42,11 @@ public protocol RossiQuestionBox<Question> {
     func show()
     func hide()
 }
+
+public protocol RossiSequenceStore {
+    func track(value: Any?)
+    func clear()
+    
+    var last: Any? { get }
+    var sequence: any Sequence<Any?> { get }
+}

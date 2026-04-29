@@ -8,12 +8,13 @@
 import Foundation
 
 @MainActor
-public final class RossiOrchestrator<ActivityMachine, SideEffectMachine, ComputationMachine, QuestionBox, CommandGeneratorProvider>
+public final class RossiOrchestrator<ActivityMachine, SideEffectMachine, ComputationMachine, QuestionBox, CommandGeneratorProvider, SequenceStore>
 where ActivityMachine: RossiActivityMachine,
       SideEffectMachine: RossiSideEffectMachine,
       ComputationMachine: RossiComputationMachine,
       QuestionBox: RossiQuestionBox,
       CommandGeneratorProvider: RossiCommandGeneratorProvider,
+      SequenceStore: RossiSequenceStore,
       ActivityMachine.Activity == CommandGeneratorProvider.CommandGenerator.Activity,
       SideEffectMachine.SideEffect == CommandGeneratorProvider.CommandGenerator.SideEffect,
       ComputationMachine.Computation == CommandGeneratorProvider.CommandGenerator.Computation,
@@ -39,7 +40,8 @@ where ActivityMachine: RossiActivityMachine,
         sideEffectMachine: SideEffectMachine,
         computationMachine: ComputationMachine,
         questionBox: QuestionBox,
-        commandGeneratorProvider: CommandGeneratorProvider
+        commandGeneratorProvider: CommandGeneratorProvider,
+        sequenceStore: SequenceStore
     ) {
         self.activityMachine = activityMachine
         self.sideEffectMachine = sideEffectMachine
@@ -47,7 +49,7 @@ where ActivityMachine: RossiActivityMachine,
         self.questionBox = questionBox
         self.commandGeneratorProvider = commandGeneratorProvider
         
-        self.sequenceStore = SequenceStore()
+        self.sequenceStore = sequenceStore
         self.activeCommandGenerator = nil
         
         self.state = .idle
